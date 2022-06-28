@@ -244,7 +244,7 @@ aside form {
 }
 aside input, aside select {
     display: block;
-    width: auto;
+    width: 170px;
     border: 1px solid #fffcfc;
     border-radius: 5px;
     margin-bottom: 12px;
@@ -386,14 +386,14 @@ table {
     font-size: 12px;
     line-height: 20px;
     font-weight: 700;
-    color: #ffffff;
+    color: white;
+    
     text-align: center;
     border-radius: 10px;
-    border-collapse: collapse;
+   
+    border-spacing: 1px;
     
 }
-
-
 .burgundy {
     background-color: #9c4757;
     border-radius: 10px;
@@ -474,21 +474,31 @@ footer {
     margin: 28px 62px 0 10px;
    
 }
-.footer_content_box ul{
-    padding-left: 20px;
-}
-.hours {
-    margin-top: 14px;
+.footer_content_box .hours {
+    margin-top: 3px;
+    padding-left: 31px;
 }
 .footer_content_box .hours li {
-    list-style-image: url(../img/cherry.png);
+    position: relative;
+    list-style-type: none;
+    padding-left: 0px;
 }
+.footer_content_box .hours li::before{
+    position: absolute;
+    content: url(../img/cherry.png);
+    top: 7px;
+    left: -24px;
+
+}
+
+
 .footer_content_box p {
     font-family: Arial;
     font-size: 12px;
     line-height: 1.2;
     font-weight: 400;
     color: #85898f;
+    margin-top: 11px;
 }
 /* .footer_content_box .hours li:first-child {
     list-style: none;
@@ -525,8 +535,8 @@ footer {
 }
 .footer_content_box .none_lacation {
     list-style: none;
-    margin-top: 0;
-    padding-left: 5px;
+    margin-top: 7px;
+    padding-left: 3px;
 }
 .last hr {
     margin-bottom: 4px;
@@ -537,6 +547,7 @@ footer {
     line-height: 1.2;
     font-weight: 400;
     color: #d08b98;
+    text-decoration: underline;
 }
 
 .footer_content_box .none_lacation li a:visited {
@@ -551,14 +562,22 @@ footer {
     
 }
 .footer_content_box h3 {
+    display: inline-block;
     font-family: Arial;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
-    
 }
+.exeption::first-letter {
+    color: #a5adb8;
+
+}
+.footer_content_box .exeption {
+    display: inline-block;
+}
+
 .footer_content_box  hr{
-    
+    margin-top: 6px;
     margin-left: 0;
     padding: 0;
     width: 270px;
