@@ -81,17 +81,21 @@ body, html {
     font-weight: 400;
     color: #d9dcdf;
 }
-
+.xxx {
+  max-height: 36px;
+}
 .nav__list{
     background-color: #95161f;
     display: inline-block;
-    
+    min-height: 36px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+
 .nav__list-link {
+    min-height: 18px;
     font-family: Arial;
     font-size: 16px;
     line-height: 14px;
@@ -385,7 +389,6 @@ table {
     margin-bottom: 60px;
     width: 694px;
     min-height: 269px;
-    background-color: #d8dbde;
     font-family: Arial;
     font-size: 12px;
     line-height: 20px;
@@ -523,6 +526,11 @@ footer {
     padding-left: 3px;
     
 }
+
+
+
+
+
 .footer_content_box a{
     font-family: Arial;
     font-size: 14px;
@@ -534,9 +542,20 @@ footer {
 .footer_content_box  a:visited {
     color: #a5adb8;
 }
-.footer_content_box .local_cherry li::marker {
-    color: #9c4757;
+.footer_content_box .local_cherry {
+    list-style: none;
 }
+.footer_content_box .local_cherry li::before {
+    content: '';
+  display: inline-block;
+  height: 4.8px;
+  width: 4.8px;
+  vertical-align: middle;
+  border-radius:50%;
+  background-color:#9c4757;
+  margin-right: 11px;
+}
+
 .footer_content_box .none_lacation {
     list-style: none;
     margin-top: 7px;
@@ -553,7 +572,11 @@ footer {
     color: #d08b98;
     text-decoration: underline;
 }
-
+.tel-link {
+    display: block;
+    margin-left: 3px;
+    margin-top: 5px;
+}
 .footer_content_box .none_lacation li a:visited {
     color: #d08b98;
 }
